@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Loading spinner (circle) */
+.loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  margin: 20px auto;
+  display: none; /* Hidden initially */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Container for the entire BibTeX block */
+.bibtex-container {
+  background-color: #f3f3f3;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+
+/* Header similar to what you referenced */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  font-size: 12px;
+  text-align: left;
+  font-family: monospace;
+}
+
+/* Copy button container to position the button */
+.copy-button-container {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+/* Copy button style */
+#copy-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Code block for BibTeX */
+.code-block {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  white-space: pre-wrap; /* Ensures line breaks are preserved */
+  overflow-x: auto; /* Enables horizontal scrolling */
+  font-family: monospace;
+  font-size: 14px;
+}
+
+/* Specific to the BibTeX code */
+#bibtex-output {
+  display: block;
+  color: #333;
+  font-family: monospace;
+  white-space: pre-wrap; /* Preserve line breaks */
+}

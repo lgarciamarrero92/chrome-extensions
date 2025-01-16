@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BibTex Extractor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bibtex-container">
+      <!-- Loading Spinner -->
+      <div id="loading" class="loading-spinner"></div>
+
+      <!-- BibTeX Block Title -->
+      <div class="header">
+        bibtex
+      </div>
+
+      <!-- Copy Button (Similar to your example) -->
+      <div class="copy-button-container">
+        <button id="copy-btn" style="display:none;">Copy Code</button>
+      </div>
+
+      <!-- BibTeX Code Display -->
+      <div class="code-block">
+        <code id="bibtex-output" class="language-bibtex"></code>
+      </div>
+    </div>
+
+    <!-- Hidden Textarea for Copy -->
+    <textarea id="hidden-textarea" style="display:none;"></textarea>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

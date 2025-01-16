@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Annotations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      min-width: 300px;
+      margin: 0;
+      padding: 10px;
+      background-color: #f5f5f5;
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 1.5em;
+      color: #333;
+    }
+    #search-input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .annotation {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 10px;
+      margin-bottom: 10px;
+      position: relative;
+      transition: background-color 0.2s;
+    }
+    .annotation:hover {
+      background-color: #f9f9f9;
+    }
+    .annotation-text {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #333;
+      white-space: normal;
+      overflow: visible;
+      text-overflow: clip;
+    }
+    .annotation-note {
+      margin-left: 10px;
+      color: #555;
+      white-space: normal;
+      overflow: visible;
+      text-overflow: clip;
+    }
+    .annotation-timestamp {
+      font-size: 0.8em;
+      color: #888;
+      margin-top: 5px;
+    }
+    .annotation-buttons {
+      margin-top: 10px;
+      text-align: right;
+    }
+    .annotation-buttons button {
+      margin-left: 5px;
+      background-color: transparent;
+      border: none;
+      padding: 5px;
+      cursor: pointer;
+      color: #555;
+      font-size: 14px;
+    }
+    .annotation-buttons button:hover {
+      color: #000;
+    }
+    .no-annotations {
+      text-align: center;
+      color: #777;
+      font-style: italic;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Annotations</h2>
+  <input type="text" id="search-input" placeholder="Search annotations...">
+  <div id="annotations-list">
+    <!-- Annotations will be injected here -->
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
